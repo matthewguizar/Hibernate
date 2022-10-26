@@ -18,6 +18,8 @@
     <!--ECHO ALL EXECUTED SQL TO STDOUT-->
     <property name="show_sql">true</property>
 
+    <!--USING ANOTHER XML FILE-->
     <mapping resource="domain/Message.hbm.xml"/>
+    <!--MAPPING CLASS= "CLASS NAME" ALLOWS THE USE OF JPA ANNOTATIONS-->
     </session-factory>
 </hibernate-configuration>
