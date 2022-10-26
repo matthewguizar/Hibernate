@@ -17,9 +17,11 @@
 
     <!--ECHO ALL EXECUTED SQL TO STDOUT-->
     <property name="show_sql">true</property>
+    <property name ="generate_statistics">true</property>
 
     <!--USING ANOTHER XML FILE-->
-    <mapping resource="domain/Message.hbm.xml"/>
+    <!-- <mapping resource="domain/Message.hbm.xml"/> -->
     <!--MAPPING CLASS= "CLASS NAME" ALLOWS THE USE OF JPA ANNOTATIONS-->
+    <mapping class="entity.Message"/>
     </session-factory>
 </hibernate-configuration>
